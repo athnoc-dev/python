@@ -1,7 +1,7 @@
 # Google Dynamic DNS updater
 ## Description
 I am one of those who are unfortunate enough to be behind a [Carrier-grade NAT](https://en.wikipedia.org/wiki/Carrier-grade_NAT) (a NAT implemented by an ISP).<br><br> 
-This means that the ISP uses NAT before letting you go on the Internet. What happens is the following:<br> 
+This means that the ISP uses NAT before letting you go on the Internet. What happens is the following:<br><br>
 **My network -> Router (NAT 1) -> ISP router (NAT 2) -> Internet**<br><br> 
 The ISP router ip address will block any port forwards to my internal network.<br><br>
 However, I found that the NAT 1 address was actually a reservered WAN ip address range and is accessible from the Internet directly.<br> 
