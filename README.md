@@ -1,6 +1,6 @@
 # python
-**Google Dynamic DNS updater**
-**Description**
+**Google Dynamic DNS updater**<br> 
+**Description**<br> 
 I am one of those who are unfortunate enough to be behind a Carrier Grade NAT (a NAT implemented by an ISP).<br> 
 This means that the ISP uses NAT before letting you go on the Internet. What happens is the following:<br> 
 My network -> Router (NAT 1) -> ISP router (NAT 2) -> Internet<br> 
@@ -10,12 +10,12 @@ This small script logs into the router and retrieve the WAN ip address and updat
 For the browser automation I have used Selenium with a headless Firefox webdriver.<br> 
 The POST method for the API is done with the Python requests library.<br /> 
 
-**Requirements**
-Selenium
-How to install Selenium, a browser and a webdriver
+**Requirements**<br> 
+Selenium<br> 
+How to install Selenium, a browser and a webdriver<br> 
 
-Requests
+Requests<br> 
 
-**Usage**
-Run google_dyndns.py 
-Debug logging to console and info to google_dyndns.log
+**Usage**<br> 
+Run google_dyndns.py <br> 
+Debug logging to console and info to google_dyndns.log<br> 
