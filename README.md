@@ -7,7 +7,7 @@ The ISP router ip address will block any port forwards to my internal network co
 However, I found that the **NAT 1** address is actually a [Shared Address Space](https://rdap.arin.net/registry/ip/100.64.0.0) and is accessible from the Internet directly.<br> 
 When trying to update my ip address directly through the [Google Domains Dynamic DNS API](https://support.google.com/domains/answer/6147083?hl=en#:~:text=Update%20your%20Dynamic%20DNS%20record%20with%20the%20API), it reads the **NAT 2** ip address [sent by the browser](https://support.google.com/domains/answer/6147083?hl=en#:~:text=If%20not%20supplied%2C%20we%20use%20the%20IP%20of%20the%20agent%20that%20sent%20the%20request.), instead of the **NAT 1** ip address.<br><br>
 So the easy way does not work.<br><br> 
-This small script logs into the router and retrieve the WAN ip address (**NAT 1**) and updates the ip address through the Google Domains Dynamic DNS API automatically.<br><br> 
+This small script logs into the router and retrieves the WAN ip address (**NAT 1**) and updates the ip address through the Google Domains Dynamic DNS API automatically.<br><br> 
 For the browser automation I have used Selenium with a headless Firefox webdriver.<br>
 The POST method for the API is done with the Python requests library.
 
